@@ -162,7 +162,7 @@ resource "azurerm_virtual_machine_extension" "deployad" {
   settings = <<SETTINGS
     { 
     "fileUris": [ 
-        "https://raw.githubusercontent.com/jjacquotot/JJA-DEV/master/scripts/ad.ps1" 
+        "https://raw.githubusercontent.com/jjacquotot/Azure-Terraform/master/Scripts/ad.ps1" 
     ], 
     "commandToExecute": "powershell.exe -ExecutionPolicy Unrestricted -File ad.ps1" 
     } 
@@ -261,7 +261,7 @@ resource "azurerm_virtual_machine_extension" "joinad" {
   settings = <<SETTINGS
     { 
     "fileUris": [ 
-        "https://raw.githubusercontent.com/jjacquotot/JJA-DEV/master/scripts/add-domain.ps1" 
+        "https://raw.githubusercontent.com/jjacquotot/Azure-Terraform/master/Scripts/add-domain.ps1" 
     ], 
     "commandToExecute": "powershell.exe -ExecutionPolicy Unrestricted -File add-domain.ps1" 
     } 
