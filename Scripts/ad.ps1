@@ -3,8 +3,8 @@ Add-WindowsFeature -Name AD-Domain-Services -IncludeManagementTools -IncludeAllS
 Add-WindowsFeature -Name DNS -IncludeManagementTools -IncludeAllSubFeature
 
 $CreateDnsDelegation = $false
-$DomainName = "cltdom.local"
-$NetbiosName = "CLTDOM"
+$DomainName = "jjaad.local"
+$NetbiosName = "JJAAD"
 $NTDSPath = "C:\Windows\NTDS"
 $LogPath = "C:\Windows\NTDS"
 $SysvolPath = "C:\Windows\SYSVOL"
